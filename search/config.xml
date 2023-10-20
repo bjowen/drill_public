@@ -1,0 +1,27 @@
+<config>
+    <data>
+        <sft_dir>/lustre/work/benjowen/sfts/O2</sft_dir>
+        <start comment="GPS seconds from GWOSC">1164556817</start>
+        <stop comment="GPS seconds from GWOSC">1187733618</stop>
+    </data>
+    <searches>
+        <cost_target comment="core hours">1e6</cost_target>
+	<job_hours comment="hours per job">10</job_hours>
+        <band_breaks>
+            <freq comment="Hz">75</freq>
+            <freq comment="Hz">125</freq>
+            <freq comment="Hz">275</freq>
+        </band_breaks>
+        <keep_threshold>33</keep_threshold>
+        <mismatch comment="maximum in template bank">0.2</mismatch>
+        <false_alarm comment="probability for further look">0.05</false_alarm>
+        <min_braking>2</min_braking>
+        <max_braking>7</max_braking>
+    </searches>
+    <upper_limits>
+        <band comment="Hz">1</band>
+        <false_dismissal comment="probability">0.1</false_dismissal>
+        <injections comment="number per band">1000</injections>
+    </upper_limits>
+    <benchmark comment="seconds per template per SFT">5e-8</benchmark>
+</config>
